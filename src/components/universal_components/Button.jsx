@@ -5,7 +5,7 @@ const Button = ({children, isButton,btnSize, btnBgColor,btnStyle, btnShape}) => 
 
     const BTN_SIZES = ['btn__small','btn__medium','btn__large','btn__mobile']
     const BTN_STYLES = ['btn-normal__style','btn-primary__outline','btn-secondary__outline','btn-normal__outline']
-    const  BTN_COLORS= ['btn-normal__color','btn__primary','btn__secondary','btn-secondary__normal']
+    const  BTN_COLORS= ['btn-normal__color','btn__primary','btn__secondary']
     const BTN_SHAPES = ['btn-normal__shape','btn__rounded','btn__curved']
 
 

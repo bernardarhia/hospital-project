@@ -44,7 +44,7 @@ const Navbar = () => {
             })}
         </ul>
             <div className="nav__btn">
-            <Button isButton={false} to="/">Get Started</Button>
+            <Button isButton={false} btnBgColor="btn__primary" btnShape="btn__curved" to="/" >Get Started</Button>
             </div>
 
             <div className="toggle__icons"></div>
