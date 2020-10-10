@@ -1,0 +1,27 @@
+.nav{
+
+
+    &__container{
+        height: 80px;
+        @extend %flex_sb;
+    }
+
+
+    .logo{
+        height: 50%;
+    }
+
+
+    &__lists{
+        @extend %flex_sb;
+
+        .nav__list{
+            padding: 1rem;
+            a{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+}
