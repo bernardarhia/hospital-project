@@ -1,14 +1,15 @@
 .nav{
-
+border: 1px solid red;
 
     &__container{
-        height: 80px;
+       height: 80px;
         @extend %flex_sb;
+        padding: 1.5rem 0;
     }
 
 
     .logo{
-        height: 50%;
+        height: 90%;
     }
 
 
@@ -24,4 +25,24 @@
             }
         }
     }
+}
+
+
+@media (max-width:940px){
+    .nav{        
+        border: none;
+            &__container{
+                height: auto;
+                display: block;
+            }
+            &__lists{        
+                display: block;
+                text-align: center;
+            }
+
+            .btn{
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
 }

@@ -23,6 +23,8 @@
 .btn__mobile{
     width: 80%;
     @extend %auto_margin;
+    padding: 1rem;
+    text-align: center;
 }
 
 

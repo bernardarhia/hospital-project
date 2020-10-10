@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useState, useEffect} from "react"
 import {Link} from "gatsby";
 import Button from "./universal_components/Button";
 const Navbar = () => {
@@ -20,6 +20,19 @@ const Navbar = () => {
 
         },
     ]
+
+    const [mobileViewToggle, setMobileViewToggle] = useState(null);
+
+
+    useEffect(()=>{
+        window.addEventListener("resize", function(){
+            if(window.innerWidth <= 940){
+                setMobileViewToggle(false)
+            }else{
+                setMobileViewToggle(true)
+            }
+        })
+    }, []);
   return (
     <nav className="nav">
       <div className="container">
@@ -44,7 +57,7 @@ const Navbar = () => {
             })}
         </ul>
             <div className="nav__btn">
-            <Button isButton={false} btnBgColor="btn__primary" btnShape="btn__curved" to="/" >Get Started</Button>
+            <Button isButton={false} btnSize={mobileViewToggle=== false ? "btn__mobile":"btn__small"} btnBgColor="btn__primary" btnShape="btn__curved" to="/" >Get Started</Button>
             </div>
 
             <div className="toggle__icons"></div>

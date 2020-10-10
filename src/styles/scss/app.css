@@ -52,6 +52,8 @@ body {
 
 .btn__mobile {
   width: 80%;
+  padding: 1rem;
+  text-align: center;
 }
 
 .btn__primary {
@@ -100,11 +102,15 @@ body {
   border-radius: 7px;
 }
 
+.nav {
+  border: 1px solid red;
+}
 .nav__container {
   height: 80px;
+  padding: 1.5rem 0;
 }
 .nav .logo {
-  height: 50%;
+  height: 90%;
 }
 .nav__lists .nav__list {
   padding: 1rem;
@@ -115,6 +121,23 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 940px) {
+  .nav {
+    border: none;
+  }
+  .nav__container {
+    height: auto;
+    display: block;
+  }
+  .nav__lists {
+    display: block;
+    text-align: center;
+  }
+  .nav .btn {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
 .showcase {
   height: 100vh;
   width: 100%;
