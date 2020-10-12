@@ -4,6 +4,7 @@ import Container from "../Container"
 import Hero from "../components/universal/Hero"
 import Navbar from "../components/universal/Navbar"
 import { cardContents } from "../content/aboutCard"
+import Footer from "../components/universal/Footer"
 const about = ({ uri }) => {
   return (
     <Layout>
@@ -46,6 +47,7 @@ const about = ({ uri }) => {
             </div>
         </section>
       </Container>
+      <Footer />
     </Layout>
   )
 }
