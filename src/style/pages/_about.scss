@@ -1,0 +1,104 @@
+.about{
+    margin: 5rem 0;
+
+
+    .section__text{
+       width: 80%;
+       margin: 0 auto;
+       text-align: center;
+
+       .heading{
+           margin: 1rem 0;
+           p{
+               font-size: 2rem;
+               color: $secondary_color;
+           }
+       }
+
+       .para{
+            margin-bottom: 4rem;
+            width: 50%;
+            margin: 0 auto;
+            p{
+                color: $light_text_color;
+                line-height: 2;
+            }
+       }
+    }
+
+    .section__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2rem;
+        margin-top: 8rem;
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem 4rem;
+            transition: all .3s ease;
+
+            &:hover{
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+            &__heading{
+                margin: 2rem 0;
+                p{
+                    font-size: 24px;
+                    color: $secondary_color;
+                    line-height: 1.5;
+                }
+            }
+
+            &__content{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:980px){
+    .about{
+        .section__cards{
+            grid-template-columns: repeat(2,1fr);
+           
+            .card{
+               display: block;
+               text-align: center;
+               width: 98%;
+               margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .about{
+
+        .section__text{
+            width: 98%;     
+            .heading{          
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+     
+            .para{                
+                 width: 98%;
+            }
+         }
+
+        .section__cards{
+            grid-template-columns: repeat(1,1fr);
+            .card{
+               display: block;
+               text-align: center;
+            }
+        }
+    }
+}
+
+
