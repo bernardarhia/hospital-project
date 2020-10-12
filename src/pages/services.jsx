@@ -5,7 +5,7 @@ import Hero from "../components/universal/Hero"
 import Navbar from "../components/universal/Navbar"
 import { cardContents } from "../content/aboutCard"
 import Footer from "../components/universal/Footer"
-const about = ({ uri }) => {
+const services = ({ uri }) => {
   return (
     <Layout>
       <Navbar />
@@ -52,4 +52,4 @@ const about = ({ uri }) => {
   )
 }
 
-export default about
+export default services

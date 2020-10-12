@@ -96,23 +96,37 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer__middle-section">
-          <div className="footer__middle-section-left">
-            <div className="content">
-              <div className="logo">
-                  
-                <img src="" alt="" />
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-                </p>
-              </div>
+      
+
+        <div className="footer__info">
+          <div className="footer__info-left">
+            <div className="logo">
+              <img src="https://res.cloudinary.com/everich1/image/upload/v1602521393/hopital%20project/Logo_g37st5.png" alt="" />
             </div>
+            <div className="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div className="footer__info-right">
+            <form action="">
+              <div className="heading">
+                <p>Stay up to date on the latest Le-Beauty news.</p>
+              </div>
+              <div className="inputs">
+                <input type="email" placeholder="Your Email" />
+                <button>Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </Container>
+      <div className="footer__end">
+        <p>© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by <a href="">Bernard Arhia</a></p>
+      </div>
     </footer>
   )
 }
