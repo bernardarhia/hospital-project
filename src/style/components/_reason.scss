@@ -1,0 +1,41 @@
+.choose__us{
+   margin: 6rem 0;
+    .heading{
+        p{
+            color: $secondary_color;
+            font-size: 2rem;
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+    }
+   .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    .card{
+        &__content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &_heading{
+            padding: 2rem 0;
+            p{
+                font-size: 24px;
+                color: $secondary_color;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+        .content{
+            width: 80%;
+            margin: 0 auto;
+            p{
+                color: $light_text_color;
+                text-align: center;
+            }
+        }
+    }
+   }
+}

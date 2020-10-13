@@ -1,6 +1,7 @@
 @import "../style/configs/config";
 @import "./universal/navbar";
 @import "./components/hero";
+@import "./components/reason";
 @import "./components/footer";
 
 
@@ -9,3 +10,4 @@
 // Pages importation
 
 @import "./pages/services";
+@import "./pages/about";

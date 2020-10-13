@@ -1,4 +1,4 @@
-.about{
+.services{
     margin: 5rem 0;
 
 
@@ -62,7 +62,7 @@
 
 
 @media (max-width:980px){
-    .about{
+    .services{
         .section__cards{
             grid-template-columns: repeat(2,1fr);
            
@@ -76,7 +76,7 @@
     }
 }
 @media (max-width:768px){
-    .about{
+    .services{
 
         .section__text{
             width: 98%;     

@@ -12,7 +12,7 @@ const services = ({ uri }) => {
       <Container>
         <Hero />
 
-        <section className="about">
+        <section className="services">
           {/* Section text */}
           <div className="section__text">
             <div className="heading">
