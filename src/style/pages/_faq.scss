@@ -1,0 +1,53 @@
+.faq{
+    margin: 5rem 0;
+
+
+    &__content{
+        text-align: center;
+        .faq__heading{
+            padding-bottom: 1.5rem;
+            p{
+                color: $secondary_color;
+                font-size: 2rem;
+            }
+        }
+
+        .content{
+            margin-bottom: 3rem;
+            p{
+                width: 50%;
+                margin: 0 auto;
+                line-height: 1.8;
+                color: #878DA4;
+            }
+        }
+    }
+    .cta{
+        margin: 5rem 0;
+        text-align: center;
+
+        .heading{
+            padding-bottom: 1.4rem;
+            p{
+                font-size: 2rem;
+                color: $secondary_color;
+            }
+        }
+        .content{
+            padding-bottom: 1.4rem;
+            p{
+                color: $light_text_color;
+            }
+        }
+        &__link{
+            display: inline-block;
+            color: #09A4D8;
+            font-size: 14px;
+            border: 1px solid #09A4D8;
+            padding: 1rem 3rem;
+        }
+    }
+}
+
+
+

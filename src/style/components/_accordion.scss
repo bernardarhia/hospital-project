@@ -1,0 +1,45 @@
+.accordion{
+    padding: 1.5rem 2rem;
+    background: #F8FBFC;
+
+    &__lists{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.5rem;
+        .accordion__list{
+            .head{
+                padding: 1rem;
+                border-bottom: 1px solid $light_text_color;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+
+            input{
+                display: none;
+                &:checked ~ .content {
+                   max-height: 20vh;
+                }
+            }
+            .content{
+                max-height: 0;
+                overflow: hidden;
+                transition: .3s ease;
+                p{
+                    padding: 1.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px){
+    .accordion{
+        &__lists{
+            grid-template-columns: 1fr;
+            
+        }
+    }
+}
