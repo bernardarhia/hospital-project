@@ -1,0 +1,26 @@
+.slider{
+    padding: 5rem 0 0 0;
+   display: grid;
+   background: #F8FBFC;
+   grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+   .slider__lists{
+       img{
+           width: 100%;
+       }
+   }
+}
+
+
+
+@media (max-width:768px){
+    .slider{
+       grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media (max-width:500px){
+    .slider{
+       grid-template-columns: 1fr;
+    }   
+}

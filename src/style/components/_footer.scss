@@ -184,10 +184,8 @@
       
                 form{
                         button{             
-                            padding: 1.2rem 2rem;
                             border-radius: 5px;
                             display:block;
-                            width: 100%;
                             margin: 1rem 0;
                         }
                 }
@@ -203,13 +201,11 @@
            
         
         &__content{
-            border: 1px solid;
 
             display: block;
             text-align: center;
 
             &-left{
-                border: 1px solid yellow;
                 margin-bottom: 2rem;
             }
             &-right{
@@ -237,6 +233,9 @@
                    input{
                        width: 100%;
                    }
+                   button{
+                       width: 100%;
+                   }
                }
             }
         }
@@ -248,7 +247,6 @@
     .footer{   
            
         &__content{
-            border: 1px solid;
             &-right{
                 flex-wrap: wrap;
                 display: block;

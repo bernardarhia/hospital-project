@@ -6,6 +6,8 @@ import Navbar from "../components/universal/Navbar"
 import Container from "../Container"
 import Layout from "../Layout"
 import Reason from "../components/Reason"
+import Slider from "../components/Slider"
+import { Testimonials } from "../components/Testimonials"
 const About = () => {
   return (
     <Layout>
@@ -43,6 +45,8 @@ const About = () => {
 
         </section> */}
         <Reason />
+        <Slider />
+        <Testimonials />
       </Container>
       <Footer />
     </Layout>

@@ -45,3 +45,33 @@
     }
    }
 }
+
+
+
+
+@media (max-width:768px){
+    .choose__us{
+         .heading{
+             p{
+                 font-size: 1.5rem;            
+             }
+         }
+        .cards{
+         grid-template-columns: repeat(2,1fr);
+        }
+     } 
+}
+
+@media (max-width:560px){
+    .choose__us{
+         .heading{
+             p{
+                 font-size: 1.3rem;            
+             }
+         }
+        .cards{
+         grid-template-columns: 1fr;
+         grid-gap: 2rem;
+        }
+     } 
+}

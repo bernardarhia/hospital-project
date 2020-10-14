@@ -1,0 +1,26 @@
+.testimonials{
+margin: 5rem 0;
+    .content{
+        text-align: center;
+        margin-bottom: 3rem;
+        .heading{
+            padding: 1rem 0;
+            color: #09A4D8;
+            font-size: 14px;
+        }
+        .text{
+            color: $secondary_color;
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width:500px){
+    .testimonials{
+        .content{
+            .text{
+                font-size: 24px;
+            }
+        }
+    }
+}
