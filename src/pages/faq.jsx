@@ -37,7 +37,7 @@ const Faq = () => {
               </div>
 
               <div className="cta__link">
-                <Link>Contact us</Link>
+                <Link to="/">Contact us</Link>
               </div>
             </div>
           </div>

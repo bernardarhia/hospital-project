@@ -41,10 +41,13 @@
         }
         &__link{
             display: inline-block;
-            color: #09A4D8;
             font-size: 14px;
             border: 1px solid #09A4D8;
             padding: 1rem 3rem;
+            a{
+                text-decoration: none;
+                color: #09A4D8;
+            }
         }
     }
 }

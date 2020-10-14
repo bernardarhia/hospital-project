@@ -8,10 +8,10 @@ const Accordion = () => {
       <div className="accordion__lists">
         {accordionContents.map((accordionContent, index)=>{
             return <div className="accordion__list" key={index}>
-                <input type="radio" name="accordion" id="accordion" onChange={()=>{
+                <input type="checkbox" name="accordion" id={`&accordion${index}`} onChange={()=>{
                     setToggleAccordionIcon(!toggleAccordionIcon)
                 }} />
-                 <label htmlFor="accordion" className="head">
+                 <label htmlFor={`&accordion${index}`} className="head">
                     <span>{accordionContent.heading}</span>
                    { toggleAccordionIcon ? <RiArrowDropUpLine /> :< RiArrowDropDownLine />}
                     </label>
