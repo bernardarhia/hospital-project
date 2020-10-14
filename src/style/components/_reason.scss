@@ -11,8 +11,14 @@
    .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
+    grid-gap: 1.5rem;
     .card{
+
+        .img{
+            img{
+                width: 100%;
+            }
+        }
         &__content{
             display: flex;
             align-items: center;

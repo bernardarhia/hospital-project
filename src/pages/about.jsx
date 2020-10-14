@@ -12,7 +12,7 @@ const About = () => {
       <Navbar />
       <Container>
         <Hero />
-        <section className="about">
+        {/* <section className="about">
           <div className="about__content">
             <div className="text__content">
               <div className="heading">
@@ -40,10 +40,9 @@ const About = () => {
           </div>
 
 
-          {/* why choose us */}
 
-          <Reason />
-        </section>
+        </section> */}
+        <Reason />
       </Container>
       <Footer />
     </Layout>
