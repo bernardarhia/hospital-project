@@ -1,0 +1,49 @@
+.error__page{
+    &-content{
+        display: grid;
+        place-items: center;
+    }
+    &-text{
+        padding-top: 2rem;
+        width: 50%;
+        p{
+            color: $light_text_color;
+            line-height: 1.7;
+        }
+    }
+    &-redirect{
+        padding: 2rem;
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 1rem 3rem;
+            color: #fff;
+            background: #09A4D8;
+            transition: .3s ease-in-out;
+            border: 1px solid #09A4D8;
+            &:hover{
+                background: #fff;
+                color: #09A4D8;
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width:768px){
+    .error__page{
+        &-img{
+            margin: 0 auto;img{
+                width: 100%;
+            }
+        }
+        &-text{
+            width: 98%;
+            text-align: center;
+        }
+    
+    }
+    
+}
