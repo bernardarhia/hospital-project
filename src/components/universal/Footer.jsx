@@ -52,7 +52,7 @@ const Footer = () => {
                 {["Who We Are", "Our Mission", "Awards", "Experience"].map(
                   (list, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link to="/">{list}</Link>
                       </li>
                     )
@@ -69,7 +69,7 @@ const Footer = () => {
                 {["Who We Are", "Our Mission", "Awards", "Experience"].map(
                   (list, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link to="/">{list}</Link>
                       </li>
                     )
@@ -85,7 +85,7 @@ const Footer = () => {
                 {["Who We Are", "Our Mission", "Awards", "Experience"].map(
                   (list, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <Link to="/">{list}</Link>
                       </li>
                     )
@@ -125,7 +125,7 @@ const Footer = () => {
         </div>
       </Container>
       <div className="footer__end">
-        <p>© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by <a href="">Bernard Arhia</a></p>
+        <p>© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by <a href="https://www.linkedin.com/in/bernard-arhia-ba4662104/">Bernard Arhia</a></p>
       </div>
     </footer>
   )

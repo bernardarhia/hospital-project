@@ -1,5 +1,4 @@
 import React from "react"
-import Container from "../Container"
 const Reason = () => {
   const cardDatas = [
     {
@@ -25,7 +24,7 @@ const Reason = () => {
     },
   ]
   return (
-    <div class="choose__us">
+    <div className="choose__us">
       <div className="heading">
         <p>Why choose us</p>
       </div>

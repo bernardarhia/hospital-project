@@ -1,0 +1,159 @@
+.contact__info{
+    margin-top: 4rem;
+
+    .contact__content{
+        display: flex;
+        &-text{
+            padding: 3rem 0;
+            flex: 1;
+            .address__first, .address__second{
+                .location{
+                    p{
+                        padding-bottom: 1rem;
+                        font-size: 24px;
+                        color: $secondary_color;
+                    }
+                    span{
+                        display: block;
+                        padding-bottom: .8rem;
+                        color: $light_text_color;
+                    }
+                }
+                .time{
+                    color: $secondary_color;
+                    span{
+                        color: $light_text_color;
+                        
+                    }
+                }
+
+                .phone{
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        &-form{
+            padding: 3rem 2rem;
+            background: #F8FBFC;
+            border-radius: 7px;
+            flex: 1;
+
+            .form__content{
+                width: 95%;
+                margin: .5rem auto;
+                .heading{
+                    font-size: 2rem;
+                    color: $secondary_color;
+                    padding-bottom: 1rem;
+                }
+                .paragraph{
+                    color: $light_text_color;
+                    width: 70%;
+                    padding-bottom: 2rem;
+                }
+            }
+
+            form{
+                width: 95%;
+                margin: .5rem auto;
+                .inputs{
+                    width: 100%;
+
+                    .name, .email, .subject, .message{
+                        width: 100%;
+                        padding: 1rem 0;
+
+                        input,textarea{
+                            width: 100%;
+                            padding: 1.3rem;
+                            outline: none;
+                            border: 1px solid $light_text_color;
+                            background: #fff;
+                            font-size: 1rem;
+
+                            &::placeholder{
+                                color: $light_text_color;
+                                font-size: 1;
+                            }
+                            &::-moz-placeholder{
+                                color: $light_text_color;
+                            }
+                            &::-webkit-input-placeholder{
+                                color: $light_text_color;
+                            }
+                        }
+                    }
+                    .btn{
+                        width: 100%;
+                        button{
+                            width: 100%;
+                            display: block;
+                            padding: 1.3rem;
+                            font-size: 1rem;
+                            background: #09A4D8;
+                            border: 1px solid #09A4D8;
+                            transition: .3s;
+                            color: #fff;
+                            &:hover{
+                                background: #fff;
+                                color: #09A4D8;
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:786px){
+    .contact__info{
+        .contact__content{
+            display: block;
+            &-text{
+               
+                .address__first, .address__second{
+                    text-align: center;
+                    .location{
+                        p{
+                            font-size: 20px;  
+                        }
+                    }
+                }
+            }
+    
+            &-form{
+                .form__content{
+                    .heading{
+                        font-size: 1.4rem;
+                    }
+                    .paragraph{
+                        width: 100%;                       
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+@media (max-width:560px){
+    .contact__info{
+        .contact__content{
+    
+            &-form{
+                form{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

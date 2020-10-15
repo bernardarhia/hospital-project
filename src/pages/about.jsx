@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import React from "react"
 import Footer from "../components/universal/Footer"
 import Hero from "../components/universal/Hero"
