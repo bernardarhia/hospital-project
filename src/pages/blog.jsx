@@ -4,7 +4,8 @@ import Container from "../Container"
 import Navbar from "../components/universal/Navbar"
 import Hero from "../components/universal/Hero"
 import Footer from "../components/universal/Footer"
-const Gallery = () => {
+import { blogContents } from "../content/blogContent"
+const Blog = () => {
   return (
     <Layout>
       <Navbar />
@@ -31,15 +32,16 @@ const Gallery = () => {
             </div>
             <div className="blog__cards">
               <div className="cards">
-                {['','','','','',''].map(element => {
+                {blogContents.map((blogContent, index) => {
                   return (
-                    <div className="card">
+                    <div className="card" key={index}>
                       <div className="img"></div>
                       <div className="date">
-                        <span>Medicine</span><li>Aug 6, 2019</li>
+                        <span>{blogContent.tag}</span>
+                        <li>{blogContent.date}</li>
                       </div>
                       <div className="title">
-                          <p>Medicine for headache</p>
+                        <p>{blogContent.title}</p>
                       </div>
                     </div>
                   )
@@ -54,4 +56,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Blog

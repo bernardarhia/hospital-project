@@ -1,5 +1,4 @@
 .blog{
-    border: 1px solid blue;
     margin-top:5rem ;
     &__content{
         &-text{
@@ -79,7 +78,6 @@
 @media (max-width:768px){
     .blog{
         &__cards{
-            border: 1px solid blue;
             .cards{
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -113,11 +111,12 @@
             } 
         }
         &__cards{
-            border: 1px solid blue;
             .cards{
                 grid-template-columns: 1fr;
 
                 .card{
+                    width: 98%;
+                    margin: 0 auto 2rem auto;
                     .date{
                         font-size: 14px;
                     }
