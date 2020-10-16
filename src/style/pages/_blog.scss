@@ -1,0 +1,135 @@
+.blog{
+    border: 1px solid blue;
+    margin-top:5rem ;
+    &__content{
+        &-text{
+            text-align: center;
+            .heading{
+                padding-bottom: 1rem;
+                p{
+                    color: $secondary_color;
+                    font-size: 2rem;
+                }
+            }
+            .paragraph{
+                padding-bottom: 1rem;
+                width: 50%;
+                margin: 0 auto;
+                p{
+                    color: $light_text_color;
+                }
+            }
+        }
+    }
+
+    &__tags{
+        text-align: center;
+        margin-top: 3rem;
+        span{
+            margin: 0 1rem;
+            display: inline-block;
+            padding: 1rem;
+            color:#09A4D8 ;
+            background: rgba(9, 164, 216, 0.08);
+            border: 7px;
+            border: 1px solid rgba(9, 164, 216, 0.08);
+            transition: .3s ease-out;
+            &:hover{
+                background: #fff;
+                border: 1px solid rgba(9, 164, 216, 0.52);
+            }
+        }
+    }
+
+    .cards{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1.5rem;
+        .card{
+            .img{
+                padding: 2rem;
+                background: #000;
+                margin-bottom: 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .date{
+                color: $light_text_color;
+                display: flex;
+                padding-bottom: .5rem;
+                span{
+                    display: inline-block;
+                    margin-right: .6rem;
+                }
+            }
+            .title{
+                p{
+                    color: $secondary_color;
+                    font-size: 1.3rem;
+                    font-weight: lighter;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px){
+    .blog{
+        &__cards{
+            border: 1px solid blue;
+            .cards{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width:500px){
+    .blog{
+        &__content{
+            &-text{
+                .heading{   
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+                .paragraph{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__tags{
+            span{
+                margin-top: 1rem;
+                margin-bottom: .5rem;
+                padding: .7rem;
+                font-size: 14px;
+            } 
+        }
+        &__cards{
+            border: 1px solid blue;
+            .cards{
+                grid-template-columns: 1fr;
+
+                .card{
+                    .date{
+                        font-size: 14px;
+                    }
+                    .title{
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
