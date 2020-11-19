@@ -39,7 +39,23 @@ $light_text_color:#878DA4;
 
 @media (max-width:650px){
     .container{
-        width: 98%;
+        width: 95%;
         margin: 4rem auto;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+   
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

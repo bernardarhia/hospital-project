@@ -8,13 +8,14 @@ import Layout from "../Layout"
 import Reason from "../components/Reason"
 import Slider from "../components/Slider"
 import { Testimonials } from "../components/Testimonials"
+import { Link } from "gatsby"
 const About = () => {
   return (
     <Layout>
       <Navbar />
       <Container>
         <Hero />
-        {/* <section className="about">
+        <section className="about">
           <div className="about__content">
             <div className="text__content">
               <div className="heading">
@@ -43,7 +44,7 @@ const About = () => {
 
 
 
-        </section> */}
+        </section>
         <Reason />
         <Slider />
         <Testimonials />

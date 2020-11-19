@@ -1,10 +1,7 @@
 .navbar{
-    width: 75%;
+    width: 80%;
     margin: 1rem auto;
     @extend %flex_sb;
-
-    .logo{
-    }
     .nav__lists{
         display: flex;
         align-items: center;
@@ -19,13 +16,14 @@
                 font-size: 1rem;
             }
         }
+        
     }
     .cta{
         display: block;
         border: 1px solid #09A4D8;
         a{
             display: block;
-            padding: 1.2rem 4rem;
+            padding: .6rem 3rem;
             text-decoration: none;
             color: #09A4D8;
         }

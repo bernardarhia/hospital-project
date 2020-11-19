@@ -14,14 +14,14 @@ const Navbar = () => {
         },
         {
             text:"Services",
-            location : "/service"
+            location : "/services"
         },
         {
             text:"Faq",
             location : "/faq"
         },
         {
-            text:"Contact Us",
+            text:"Contact",
             location : "/contact"
         },
         {

@@ -35,7 +35,9 @@ const Blog = () => {
                 {blogContents.map((blogContent, index) => {
                   return (
                     <div className="card" key={index}>
-                      <div className="img"></div>
+                      <div className="img">
+                        <img src="https://www.pexels.com/photo/3985163/download/?search_query=doctor&tracking_id=9c5h6odcgud" alt=""/>
+                      </div>
                       <div className="date">
                         <span>{blogContent.tag}</span>
                         <li>{blogContent.date}</li>

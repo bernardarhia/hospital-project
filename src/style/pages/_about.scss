@@ -50,3 +50,54 @@
         }
     }
 }
+
+
+
+@media (max-width:800px){
+    .about{
+    
+        &__content{
+            display: block;
+            .text__content{
+                flex: 1;
+                margin-bottom: 2rem;
+
+}
+        }
+    }
+    
+}
+
+@media (max-width:500px){
+    .about{
+        &__content{
+            .text__content{
+                .heading{
+                    padding-bottom: 2rem;
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+    
+                .content{
+                    p{
+                        line-height: 1.4;
+                    }
+                }
+            }
+    
+            .cta{
+                flex: 1;
+                padding: 1rem 2rem;
+                background:#F8FBFC;
+                margin-bottom: 5rem;
+                a{
+                    padding: .8rem;
+                }
+            }
+        }
+    }
+    
+    
+    
+}

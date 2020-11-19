@@ -48,7 +48,6 @@
         .card{
             .img{
                 padding: 2rem;
-                background: #000;
                 margin-bottom: 1rem;
                 img{
                     width: 100%;
@@ -59,7 +58,7 @@
                 display: flex;
                 padding-bottom: .5rem;
                 span{
-                    display: inline-block;
+                    display: block;
                     margin-right: .6rem;
                 }
             }
@@ -119,6 +118,7 @@
                     margin: 0 auto 2rem auto;
                     .date{
                         font-size: 14px;
+                       
                     }
                     .title{
                         p{
