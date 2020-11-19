@@ -9,20 +9,24 @@ const Navbar = () => {
             location : "/"
         },
         {
-            text:"About Us",
-            location : "/about"
+            text:"Blog",
+            location : "/blog"
         },
         {
-            text:"Department",
-            location : "/department"
+            text:"Services",
+            location : "/service"
+        },
+        {
+            text:"Faq",
+            location : "/faq"
         },
         {
             text:"Contact Us",
             location : "/contact"
         },
         {
-            text:"Pages",
-            location : "/pages"
+            text:"About",
+            location : "/about"
         },
     ]
     return (

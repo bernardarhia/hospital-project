@@ -5,7 +5,7 @@ import Hero from "../components/universal/Hero"
 import Navbar from "../components/universal/Navbar"
 import { cardContents } from "../content/aboutCard"
 import Footer from "../components/universal/Footer"
-const services = ({ uri }) => {
+const services = () => {
   return (
     <Layout>
       <Navbar />
@@ -30,7 +30,7 @@ const services = ({ uri }) => {
 
           <div className="section__cards">
               {cardContents.map((cardContent, index) => {
-               return <div className="card">
+               return <div className="card" key={index}>
                   <div className="card__icon">
                     <img src={cardContent.icon} alt="" />
                   </div>
