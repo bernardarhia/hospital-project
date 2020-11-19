@@ -9,6 +9,7 @@ import image from "../images/img.png"
 import Clients from "../components/Clients"
 import { cardContents } from "../content/aboutCard"
 import { Testimonials } from "../components/Testimonials"
+import Feature from '../components/Feature';
 export default function Home() {
   return (
     <>
@@ -40,6 +41,7 @@ export default function Home() {
 
 
           <Clients />
+          <Feature />
             <p style={{textAlign:"center",fontSize:"1.6rem", margin:"4rem 0", color:"#0F1C49"}}>
         Our services
             </p>
@@ -60,6 +62,7 @@ export default function Home() {
                 </div>
               })}
             </div>
+
               <Testimonials />
         </Container>
         <Footer />

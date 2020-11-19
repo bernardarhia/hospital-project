@@ -1,6 +1,6 @@
 .home__showcase{
     display: flex;
-
+    margin-bottom: 15rem;
     .content{
         .header{
             width: 90%;
@@ -28,6 +28,14 @@
                 background:  #09A4D8;
                 font-size: 1rem;
                 box-shadow: 0 10px 30px rgba(46, 46, 46, 0.109);
+                transition: .3s ease;
+                border: 1px solid transparent;
+
+                &:hover{
+                    background: #09a4d8be;
+                    box-shadow: 0 10px 30px rgba(46, 46, 46, 0.233);
+                }
+
             }
         }
     }

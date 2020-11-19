@@ -12,6 +12,7 @@ const Clients = () => {
           <span>organizations</span>{" "}
         </p>
       </div>
+        <p style={{marginBottom:"5rem"}}></p>
 
       <div className="clients__icons">
           <div className="icons">
